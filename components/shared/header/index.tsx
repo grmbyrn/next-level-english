@@ -1,10 +1,10 @@
 // import Image from 'next/image';
 import Link from 'next/link';
+import Menu from './menu';
 
 const Header = () => {
-    return <header className='w-full border-b'>
-        <div className="wrapper flex-between">
-            <div className="flex-start">
+    return <header className='w-full border-b overflow-hidden'>
+        <div className="wrapper flex items-center justify-between px-4 py-3">
                 <Link href='/' className='flex-start'>
                     {/* <Image
                         src='/images/logo.svg'
@@ -15,7 +15,7 @@ const Header = () => {
                     /> */}
                     Next Level English
                 </Link>
-            </div>
+            <Menu />
         </div>
     </header>
 }
